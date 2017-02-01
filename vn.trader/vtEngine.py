@@ -57,7 +57,7 @@ class MainEngine(object):
             self.gatewayDict['CTP'].setQryEnabled(True)
         except Exception, e:
             print e
-        
+	'''        
         try:
             from ltsGateway.ltsGateway import LtsGateway
             self.addGateway(LtsGateway, 'LTS')
@@ -146,7 +146,7 @@ class MainEngine(object):
             self.gatewayDict['OKCOIN'].setQryEnabled(True)
         except Exception, e:
             print e        
-
+	'''
     #----------------------------------------------------------------------
     def addGateway(self, gateway, gatewayName=None):
         """创建接口"""

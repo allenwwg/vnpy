@@ -344,7 +344,7 @@ class VtLogData(VtBaseData):
         """Constructor"""
         super(VtLogData, self).__init__()
         
-        self.logTime = time.strftime('%X', time.localtime())    # 日志生成时间
+        self.logTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())    # 日志生成时间
         self.logContent = EMPTY_UNICODE                         # 日志信息
 
 
